@@ -39,6 +39,78 @@ footer {
 }
 
 /****************** CONTENT STYLING *******************/
+.projects {
+  list-style: none;
+  padding: 0;
+  display: block;
+}
+
+.projects li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--nav-bgd-color);
+  width: inherit;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.projects li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+.projects li a:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+.projects li .proj-img {
+  border-radius: 10px;
+}
+
+.projects li .proj-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  -webkit-box-shadow: inline var(--nav-box-shadow);
+          box-shadow: inline var(--nav-box-shadow);
+}
+
+.proj-content {
+  padding: 10px;
+}
+
+.proj-content .desc {
+  text-align: justify;
+}
+
+.proj-content .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px 0 5px 0;
+}
+
+.proj-content .tags li {
+  margin: 3px;
+  display: inline;
+  background-color: var(--second-bgd-color);
+}
+
 /******** SMALL SCREENS *********/
 @media only screen and (max-width: 650px) {
   .content-container {
@@ -57,8 +129,6 @@ footer {
   .intro-img {
     float: left;
     max-width: 100px;
-    padding: 5px;
-    background-color: white;
     -webkit-box-shadow: var(--item-box-shadow);
             box-shadow: var(--item-box-shadow);
     margin: 14px;
@@ -97,6 +167,14 @@ footer {
             transform: translateY(-310px);
     margin: auto;
     padding: 20px;
+  }
+  .projects li a {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .proj-img {
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -205,78 +283,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.projects {
-  list-style: none;
-  padding: 0;
-  display: block;
-}
-
-.projects li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: var(--nav-bgd-color);
-  width: inherit;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 10px;
-}
-
-.projects li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  width: 100%;
-}
-
-.projects li a:hover {
-  -webkit-filter: brightness(0.8);
-          filter: brightness(0.8);
-}
-
-.projects li .proj-img {
-  border-radius: 10px;
-}
-
-.projects li .proj-img img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 150px;
-  height: 150px;
-  padding: 10px;
-  -webkit-box-shadow: inline var(--nav-box-shadow);
-          box-shadow: inline var(--nav-box-shadow);
-}
-
-.proj-content {
-  padding: 10px;
-}
-
-.proj-content .desc {
-  text-align: justify;
-}
-
-.proj-content .tags {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 5px 0 5px 0;
-}
-
-.proj-content .tags li {
-  margin: 3px;
-  display: inline;
-  background-color: var(--second-bgd-color);
 }
 
 .btn {
