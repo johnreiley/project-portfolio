@@ -68,11 +68,11 @@ footer {
         .proj-img {
             border-radius: 10px;
             img {
-
                 object-fit: cover;
                 width: 150px;
                 height: 150px;
                 padding: 10px;
+                border-radius: 15px;
                 box-shadow: inline var(--nav-box-shadow);
             }
         }

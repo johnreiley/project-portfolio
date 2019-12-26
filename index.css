@@ -84,6 +84,7 @@ footer {
   width: 150px;
   height: 150px;
   padding: 10px;
+  border-radius: 15px;
   -webkit-box-shadow: inline var(--nav-box-shadow);
           box-shadow: inline var(--nav-box-shadow);
 }
