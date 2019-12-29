@@ -44,7 +44,7 @@ footer {
     padding: 0;
     display: block;
 
-    li {
+    .project {
         display: flex;
         background-color: var(--nav-bgd-color);
         width: inherit;
@@ -83,6 +83,10 @@ footer {
     padding: 10px;
     .desc {
         text-align: justify;
+
+        ul, ol {
+            
+        }
     }
 
     .tags {
@@ -94,6 +98,8 @@ footer {
             margin: 3px;
             display: inline;
             background-color: var(--second-bgd-color);
+            border-radius: 5px;
+            padding: 10px;
         }
     }
 }
