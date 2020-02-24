@@ -54,6 +54,10 @@ footer {
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
+  -webkit-transition: -webkit-transform 0.2s, -webkit-box-shadow 0.2s, -webkit-filter 0.2s;
+  transition: -webkit-transform 0.2s, -webkit-box-shadow 0.2s, -webkit-filter 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, filter 0.2s, -webkit-transform 0.2s, -webkit-box-shadow 0.2s, -webkit-filter 0.2s;
 }
 
 .projects .project a {
@@ -69,11 +73,6 @@ footer {
   width: 100%;
 }
 
-.projects .project a:hover {
-  -webkit-filter: brightness(0.8);
-          filter: brightness(0.8);
-}
-
 .projects .project .proj-img {
   border-radius: 10px;
 }
@@ -87,6 +86,15 @@ footer {
   border-radius: 15px;
   -webkit-box-shadow: inline var(--nav-box-shadow);
           box-shadow: inline var(--nav-box-shadow);
+}
+
+.projects .project:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .proj-content {
